@@ -1,6 +1,6 @@
+import { Producto, Tipo } from './clases/producto2';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { AlumnoComponent } from './componentes/alumno/alumno.component';

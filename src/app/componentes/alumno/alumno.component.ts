@@ -7,7 +7,7 @@ import { Alumno } from '../../clases/alumno';
   styleUrls: ['./alumno.component.css']
 })
 export class AlumnoComponent implements OnInit {
-  @Output() alumnoCreado: EventEmitter<any>= new EventEmitter<any>();
+  @Output() SeCreoUnProducto: EventEmitter<any>= new EventEmitter<any>();
   unAlumno:Alumno;
 
   constructor() { 
@@ -17,6 +17,7 @@ export class AlumnoComponent implements OnInit {
   ngOnInit() {
    // this.unAlumno= new Alumno("alfredo","mercurio",666);
   }
+
  nuevoAlumno()
   {
     console.info("nuevoAlumno");
@@ -24,10 +25,11 @@ export class AlumnoComponent implements OnInit {
     this.unAlumno= new Alumno("natalia","natalia",legajo);
 
   }
+
   crearAlumno()
   {
     console.info("crearAlumno");
-    this.alumnoCreado.emit(this.unAlumno);
+    this.SeCreoUnProducto.emit(this.unAlumno);
     this.unAlumno=null;
   }
 }

@@ -1,0 +1,37 @@
+<!--ul class="alumnos">
+  <li *ngFor="let alumno of listadoAlumnos">
+    <span class="badge">{{alumno.legajo}}</span> {{alumno.apellido}}  -{{alumno.nombre}}  <button type="button" class="btn btn-info btn-circle"   (click)="mostrarDetalles(alumno)"><i class="fa fa-check"></i>
+    </button>
+  </li>
+</ul-->
+
+<table class="table table-striped">
+	<thead>
+		<tr>
+			<th>Descripcion</th>
+			<th>Tipo</th>
+			<th>FechaDeVencimiento</th>
+			<th>Precio</th>
+			<th>RutaDeFoto</th>
+		</tr>
+		
+	</thead>
+	
+	<tbody>
+		<tr *ngFor="let producto of listadoProductos">
+			<td>{{producto.descripcion}}</td>
+			<td>{{producto.tipo}}</td>
+			<td>{{producto.fechaDeVencimiento}}</td>
+			<td>{{producto.precio}}</td>
+			<td> <img class="card-img-top" src="{{producto.rutaDeFoto}}" alt="Card image" style="width:100%"> </td>
+
+			<td>
+				<button type="button" class="btn btn-info btn-circle" (click)="mostrarDetalles(producto)">
+					<i class="fa fa-check"></i>
+				</button>
+			</td>
+
+	  </tr>
+		 
+	</tbody>
+</table>

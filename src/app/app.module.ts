@@ -12,6 +12,9 @@ import { DetalleProfesorComponent } from './componentes/detalle-profesor/detalle
 import { ListadoProfesorComponent } from './componentes/listado-profesor/listado-profesor.component';
 import { TablaProfesorComponent } from './componentes/tabla-profesor/tabla-profesor.component';
 import { FilaProfesorComponent } from './componentes/fila-profesor/fila-profesor.component';
+import { ProductoComponent } from './componentes/producto/producto.component';
+import { DetalleProductoComponent } from './componentes/detalle-producto/detalle-producto.component';
+import { ListadoProductoComponent } from './componentes/listado-producto/listado-producto.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,7 +25,10 @@ import { FilaProfesorComponent } from './componentes/fila-profesor/fila-profesor
     DetalleProfesorComponent,
     ListadoProfesorComponent,
     TablaProfesorComponent,
-    FilaProfesorComponent
+    FilaProfesorComponent,
+    ProductoComponent,
+    DetalleProductoComponent,
+    ListadoProductoComponent
   ],
   imports: [
     FormsModule,

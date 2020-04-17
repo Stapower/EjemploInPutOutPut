@@ -1,6 +1,6 @@
 import { Component, OnInit,Output,EventEmitter } from '@angular/core';
-import { Producto } from '../../clases/producto';
-import { Tipo } from '../../clases/producto';
+import { Producto } from '../../clases/producto2';
+import { Tipo } from '../../clases/producto2';
 
 @Component({
   selector: 'app-producto',

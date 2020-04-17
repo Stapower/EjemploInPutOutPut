@@ -1,4 +1,4 @@
-import { Producto, Tipo } from './clases/producto';
+import { Producto, Tipo } from './clases/producto2';
 import { Component } from '@angular/core';
 import { Alumno } from '../app/clases/alumno';
 import { Profesor } from './clases/profesor';

@@ -1,4 +1,4 @@
-import { Producto, Tipo } from './../../clases/producto';
+import { Producto, Tipo } from './../../clases/producto2';
 import { Component, OnInit, Input,Output,EventEmitter } from '@angular/core';
 
 @Component({
